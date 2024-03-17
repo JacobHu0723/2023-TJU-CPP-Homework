@@ -12,7 +12,13 @@ int main()
     else
         temp = temp / 10;  // 四舍
     num = temp / 100.0;  // 除100.0是为了保留2位小数
-    cout << "取2位有效数字四舍五入的结果为：" << num << endl;
+
+    if (num == (int)num) // 判断,缺0补0
+        cout << "取2位有效数字四舍五入的结果为：" << num << ".00" << endl;
+    else if (num * 10 == (int)(num * 10))
+        cout << "取2位有效数字四舍五入的结果为：" << num << "0" << endl;
+    else
+        cout << "取2位有效数字四舍五入的结果为：" << num << endl;
 
     return 0;
 }
