@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    int rows = 0, ** array = nullptr, tmp = 0;
+    int rows = 0, ** array = nullptr;
     cout << "请输入矩阵的行数：";
     cin >> rows;
 
