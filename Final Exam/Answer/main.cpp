@@ -14,6 +14,7 @@ int main() {
     }
     for (int i = 0; i < 10; i++)
         infile.read((char*)&num[i], sizeof(int));
+    infile.close();
 
     // Get the sum of the digits
     for (int i = 0; i < 10; i++)
